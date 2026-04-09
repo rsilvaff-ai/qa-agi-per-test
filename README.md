@@ -17,15 +17,12 @@ Automação de teste de performance para a compra de passagem aérea no site Bla
 3. Execute o teste (Load ou Peak test).
 4. Os relatórios serão gerados em `results/`.
 
-## Resultados
+## Resultados Esperados
 - Requisições por segundo: 250 RPS
-- Tempo de resposta médio: 1.6s
-- Tempo de resposta 90th percentile: 1.9s
+- Tempo médio: < 2 s
+- 90th percentile: < 2 s
 - Erros: 0%
-
-## Conclusão
-O critério de aceitação foi **satisfatório**. A aplicação suportou a carga requerida sem falhas.
 
 ## Considerações
 - Ajuste de threads foi necessário para atingir 250 RPS.  
-- Teste de pico revelou que acima de 300 threads a latência aumenta significativamente.
+- Teste de pico revela que acima de 300 threads a latência aumenta significativamente.
